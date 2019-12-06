@@ -27,5 +27,5 @@ echo "kernel compiling stated"
 make -j$(nproc --all) O=out ARCH=arm64 \
                         CC="$(pwd)/clang/bin/clang" \
                         CLANG_TRIPLE="aarch64-linux-gnu-" \
-                        2>&1 | tee ../kernel_build_log.txt
+                        2>&1 | tee kernel_build_log.txt
                         
